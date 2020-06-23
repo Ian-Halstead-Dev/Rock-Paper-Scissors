@@ -1,0 +1,42 @@
+.header-container {
+  width: 100%;
+  height: 20%;
+  @include flex-center;
+  position: absolute;
+
+  .header {
+    @include flex-center;
+    justify-content: flex-start;
+    margin: 10vw 10vw;
+    margin-bottom: 0vh;
+    padding: 5vw;
+    border: 3px solid hsl(217, 16%, 45%);
+    width: 100%;
+    border-radius: 10px;
+
+    img {
+      width: 80px;
+      margin-right: auto;
+    }
+
+    .score {
+      @include flex-center;
+      flex-direction: column;
+      background-color: white;
+      padding: 3% 7%;
+      border-radius: 3px;
+
+      h1 {
+        font-size: 1.2rem;
+        color: hsl(229, 64%, 46%);
+        letter-spacing: 2px;
+      }
+
+      #score-counter {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $text-color;
+      }
+    }
+  }
+}

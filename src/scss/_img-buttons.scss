@@ -1,0 +1,55 @@
+.img-container {
+  $border: 10px;
+  @include flex-center;
+  width: $selection-button-dims;
+  height: $selection-button-dims;
+  background-color: white;
+  border-width: 10px;
+  border-radius: 100%;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  position: absolute;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+  }
+}
+
+#rock {
+
+  bottom: calc(-#{$selection-button-dims} /2);
+
+
+
+  &:before {
+    background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+
+  }
+}
+
+#paper {
+  top: calc(-#{$selection-button-dims} / 2);
+  left: calc(-#{$selection-button-dims} /2);
+
+  &:before {
+    background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+}
+
+#scissors {
+  top: calc(-#{$selection-button-dims} / 2);
+  right: calc(-#{$selection-button-dims} / 2);
+  ;
+
+  &:before {
+    background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%))
+  }
+}

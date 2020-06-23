@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
+}
+
+@import 'utils';
+
+
+head,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.game {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+
+@import 'header';
+@import 'selections';
+@import 'rules-btn';
+@import 'winner';
+@import 'rules';
+@import 'winner-footer';
+@import 'error';
+
+.attribution {
+  font-size: 1.1em;
+  color: white;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

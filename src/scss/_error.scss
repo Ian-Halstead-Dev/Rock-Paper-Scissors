@@ -1,0 +1,15 @@
+#error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  display: none;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 50%;
+  }
+}

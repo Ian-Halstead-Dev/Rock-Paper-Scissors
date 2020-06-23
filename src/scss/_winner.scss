@@ -1,0 +1,40 @@
+#winner {
+  $margin: 10vw;
+  width: calc(100vw - (#{$margin} * 2));
+  height: 80vh;
+  margin: 0 $margin;
+  margin-top: 35vh;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  .card {
+    width: $selection-button-dims;
+
+
+
+    .img-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+    }
+
+    .img-container.winner {
+      box-shadow: 0px 0px 0px 30px rgba(100, 100, 100, .25), 0px 0px 0px 70px rgba(100, 100, 100, .125), 0px 0px 0px 100px rgba(100, 100, 100, .1);
+    }
+
+    p {
+      font-size: 2rem;
+      color: white;
+      margin-top: 20%;
+      text-align: center;
+
+
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+#rules-image {
+  @include flex-center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99999;
+  flex-direction: column;
+  opacity: 0;
+
+  #close {
+    color: #aaa;
+    font-size: 6rem;
+    position: absolute;
+    bottom: 15%;
+    cursor: pointer;
+  }
+}
+
+#rules-image.active {
+  animation: fadeIn .2s linear forwards;
+}

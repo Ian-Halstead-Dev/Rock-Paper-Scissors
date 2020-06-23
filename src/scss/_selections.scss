@@ -1,0 +1,32 @@
+$selection-button-dims: 110px;
+
+.select-container {
+  @include flex-center;
+  width: 100vw;
+  height: 100vh;
+
+
+  .select {
+    $margin: 200px;
+
+    @include background-image;
+    background-image: url("../images/bg-triangle.svg");
+    width: calc(100% - #{$margin});
+    height: calc(100vw - #{$margin});
+    z-index: 1;
+    position: relative;
+
+
+    a {
+
+      cursor: pointer;
+      display: block;
+      width: $selection-button-dims;
+      height: $selection-button-dims;
+      display: flex;
+    }
+
+  }
+}
+
+@import 'img-buttons';

@@ -1,0 +1,24 @@
+.rules-btn-container {
+  position: absolute;
+  bottom: 10vh;
+  flex-direction: column;
+  align-items: center;
+
+  .rules-btn {
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    padding: 3% 10%;
+    letter-spacing: 2px;
+    font-weight: 400;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      background-color: white;
+
+    }
+  }
+}

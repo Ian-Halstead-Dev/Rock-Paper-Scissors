@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/css/main.min.css">
+  <script src="dist/js/displayWinner.js" defer></script>
+  <script src="dist/js/rules.js" defer></script>
+  <script src="dist/js/scoreCounter.js" defer></script>
+
+</head>
+
+<body>
+  <div class="game">
+    <div class="header-container">
+      <div class="header">
+        <img src="dist/images/logo.svg" alt="Rock Paper Scissors">
+        <div class="score">
+          <h1>SCORE</h1>
+          <p id="score-counter">12</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="winner">
+      <div class="card" id="player-decision">
+        <div class="img-container final-results" id="player-img-container">
+          <img id="player-img" src="dist/images/icon-paper.svg" alt="">
+        </div>
+        <p>YOU PICKED</p>
+      </div>
+
+      <div class="card" id='ai-decision'>
+        <div class="img-container final-results" id="ai-img-container">
+          <img id="ai-img" src="dist/images/icon-paper.svg" alt="">
+        </div>
+        <p>THE HOUSE PICKED</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="center-horiz-flex rules-btn-container winner-footer">
+      <h1 id="win-label">YOU WIN</h1>
+      <a href="index.html" id="play-again">PLAY AGAIN</a>
+      <div class="rules-btn" id="rules">
+        <p>Rules</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="rules-image">
+    <img src="dist/images/image-rules.svg">
+    <p id="close">x</p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ian Halstead</a>.
+  </div>
+
+
+  </div>
+
+  <div id="error">
+    <div class="center-horiz-flex rules-btn-container winner-footer">
+      <h1>Please Make a Selection</h1>
+      <a href="index.html" id="play-again">PLAY AGAIN</a>
+      <div class="rules-btn" id="rules">
+        <p>Rules</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
