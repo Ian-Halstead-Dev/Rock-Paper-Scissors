@@ -1,4 +1,4 @@
-const playerSelection = localStorage.getItem('Selection')!;
+const playerSelection = sessionStorage.getItem('Selection')!;
 
 const createError = () => {
 	document.getElementById('error')!.style.display = 'block';
@@ -38,13 +38,13 @@ const winner = (winner: string) => {
 		playerDecisionContainer.classList.add('winner');
 		winnerLabel.innerText = 'YOU WIN';
 
-		localStorage.setItem('Score', (parseInt(localStorage.getItem('Score')!) + 1).toString());
+		sessionStorage.setItem('Score', (parseInt(sessionStorage.getItem('Score')!) + 1).toString());
 	}
 	else if (winner === 'AI') {
 		aiDecisionContainer.classList.add('winner');
 		winnerLabel.innerText = 'YOU LOSE';
 
-		localStorage.setItem('Score', (parseInt(localStorage.getItem('Score')!) - 1).toString());
+		sessionStorage.setItem('Score', (parseInt(sessionStorage.getItem('Score')!) - 1).toString());
 	}
 	else {
 		winnerLabel.innerText = 'DRAW';

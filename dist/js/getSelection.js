@@ -1,11 +1,11 @@
 "use strict";
-localStorage.removeItem('Selection');
+sessionStorage.removeItem('Selection');
 const selectionButtons = Array.from(document.getElementsByClassName('img-container'));
-localStorage.removeItem('Selection');
+sessionStorage.removeItem('Selection');
 selectionButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault;
-        localStorage.setItem('Selection', button.id);
+        sessionStorage.setItem('Selection', button.id);
         console.log(button);
     });
 });

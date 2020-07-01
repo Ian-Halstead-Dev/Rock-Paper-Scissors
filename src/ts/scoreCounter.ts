@@ -1,11 +1,11 @@
-let score = localStorage.getItem('Score')!;
+let score = sessionStorage.getItem('Score')!;
 
 const scoreHTML = document.getElementById('score-counter')!;
 
 if (isNaN(parseInt(score))) {
 	score = '0';
 
-	localStorage.setItem('Score', score);
+	sessionStorage.setItem('Score', score);
 }
 
 scoreHTML.innerHTML = score;
